@@ -1,0 +1,13 @@
+{% include "Header.html" %}
+
+{% block contenido %}
+<h1>Contact</h1>
+<form id='formulario' action='' method='post'>
+<div id='dorado'>
+{% csrf_token %}
+{{ formulario.as_p }}
+</div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
+{% include "Footer.html" %} 
