@@ -6,13 +6,20 @@
 <style>
 #id_email, #id_name, #id_subject, #id_message {
     color:black;
+    margin-bottom: 1%;
+}
+body{
+  background-image: url('../static/core/imagenes/birras.jpg');
 }
 </style>
 
-    <h2 style="color:#f8d9ac"><b>Contacto</b></h2>
+    <h2 style="color:#f8d9ac ; padding-left:7%"><b>Contacto</b></h2>
     <div class="container" style='color:#f8d9ac'>
          {% crispy form %}
     </div>
+
+
+
 {% endblock %}
 
-{% include "Footer.html" %} 
+{% include "Footer.html" %}
